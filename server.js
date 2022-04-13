@@ -6,6 +6,6 @@ const server=express();
 server.use(cors());
 server.use("/api/v1",routers)
 
-server.listen(5001,()=>{
+server.listen(process.env.PORT || 5001,()=>{
     console.log("Server Started");
 })
